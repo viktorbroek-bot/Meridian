@@ -69,6 +69,31 @@
   .ph .ph-label span{display:block;font-weight:500;letter-spacing:.04em;text-transform:none;font-size:11px;opacity:.85;margin-top:5px;}
   .ph .cam{position:absolute;top:10px;left:12px;font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--accent);opacity:.8;}
 
+  /* real photo container (replaces .ph for live images) */
+  .img-wrap{position:relative;width:100%;height:100%;border-radius:var(--radius-m);overflow:hidden;background:var(--box);}
+  .img-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
+  .hero .hero-img .img-wrap{height:320px;}
+  .treatment .t-img.img-wrap{height:250px;margin:6px 0 22px;border:1px solid var(--line);}
+  .treatment .t-img.img-wrap.contain img{object-fit:contain;background:#fff;padding:8px;}
+  .case .c-img .img-wrap{height:230px;}
+  @media(max-width:600px){
+    .hero .hero-img .img-wrap{height:290px;}
+    .case .c-img .img-wrap{height:190px;}
+  }
+
+  /* ===== FORM EMBED SECTION ===== */
+  .form-section{margin:36px 0 24px;}
+  .form-section .form-eyebrow{font-family:'Mulish';font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:10px;text-align:center;}
+  .form-section .form-title{font-family:'Fraunces';font-weight:400;font-size:30px;line-height:1.2;color:var(--ink);text-align:center;margin:0 0 22px;letter-spacing:-.01em;}
+  .form-embed{background:#fff;border:1px solid var(--line);border-radius:var(--radius-l);padding:14px;box-shadow:var(--shadow-soft);overflow:hidden;}
+  .form-embed [data-tf-live]{min-height:560px;border-radius:var(--radius-m);overflow:hidden;}
+  .form-reassure{font-family:'Mulish';font-weight:500;font-size:13px;color:var(--ink-soft);text-align:center;margin-top:16px;line-height:1.55;}
+  @media(max-width:600px){
+    .form-section .form-title{font-size:24px;}
+    .form-embed{padding:8px;}
+    .form-embed [data-tf-live]{min-height:620px;}
+  }
+
   /* ===== BYLINE ===== */
   .byline{display:flex;align-items:center;gap:12px;justify-content:center;padding:34px 0 24px;}
   .byline .avatar{width:46px;height:46px;border-radius:50%;flex:none;}
@@ -218,7 +243,7 @@
   <!-- ===== HERO ===== -->
   <div class="hero">
     <div class="hero-img">
-      <div class="ph"><div class="ph-label">HERO IMAGE<span>Real client, mid-30s–40s. Calm, undone, natural light. Skin in focus — not a posed model. No stock.</span></div></div>
+      <div class="img-wrap"><img src="images/hero.png" alt="Calm, glowing skin — Meridian"></div>
     </div>
     <div class="hero-txt">
       <div class="date">Written May 21, 2026</div>
@@ -248,7 +273,7 @@
     <div class="rank"><span class="num">1</span> The maintenance one — for almost everyone</div>
     <h2>HydraFacial</h2>
     <div class="tagline">If you only ever book one in-clinic facial, this is it.</div>
-    <div class="t-img ph"><div class="cam">● SUMMONED ASSET</div><div class="ph-label">BEFORE / AFTER — same client, same light<span>Pulled in because the copy below describes this exact result. Real, consented, mid-to-good — not miraculous.</span></div></div>
+    <div class="t-img img-wrap"><img src="images/hydrafacial-before-after.webp" alt="HydraFacial before and after — same client"></div>
     <div class="qline"><div class="q">What it actually does.</div><p>Deep-cleans pores at a level no home routine reaches, then floods the skin with hydration and active serums while it's open and receptive. A reset, not a renovation.</p></div>
     <div class="qline"><div class="q">What you'll notice.</div><p>Skin that holds light differently — the dull layer is gone. Makeup sits flat instead of catching on dry patches. Most clients see it the same day, in the car mirror before they've left.</p></div>
     <div class="price"><span class="amt">$175–$250</span><span class="note">per session <span class="ph-flag">[verify local pricing]</span> — every 4 to 6 weeks if you keep it up. Book one and never return, and you get one good week. That's the honest math.</span></div>
@@ -278,7 +303,7 @@
     <div class="rank"><span class="num">2</span> The corrective one — for tone and texture</div>
     <h2>Chemical peel</h2>
     <div class="tagline">The one that earns a downtime week — and is worth it when it's the right call.</div>
-    <div class="t-img ph"><div class="cam">● SUMMONED ASSET</div><div class="ph-label">BEFORE / AFTER — pigmentation &amp; tone<span>Summoned by "what you'll notice." Show a realistic 4-week result, ideally with a day-3 "slightly red" shot too — honesty about downtime.</span></div></div>
+    <div class="t-img img-wrap"><img src="images/peel-before-after.png" alt="Chemical peel result — pigmentation and tone"></div>
     <div class="qline"><div class="q">What it actually does.</div><p>Removes the top layers of dull, uneven, sun-marked skin so newer skin underneath can surface. Different acids do different jobs — glycolic for texture, mandelic for sensitive skin, TCA for pigmentation. Matched to your face, not pulled off a menu.</p></div>
     <div class="qline"><div class="q">What you'll notice.</div><p>A few days of slight redness, then flaking around day four to six. By day seven to ten: more even tone, smoother texture, and that "what's different about you" reaction nobody can quite place.</p></div>
     <div class="price"><span class="amt">$200–$450</span><span class="note">depending on depth <span class="ph-flag">[verify]</span>. Most see real change after a single well-chosen peel — not the package of six some clinics quote.</span></div>
@@ -299,7 +324,7 @@
     <div class="rank"><span class="num">3</span> The deep one — and the one we don't offer</div>
     <h2>RF microneedling</h2>
     <div class="tagline">The most powerful of the three. We send people elsewhere for it, on purpose.</div>
-    <div class="t-img ph"><div class="cam">● ATMOSPHERE / ILLUSTRATION</div><div class="ph-label">DIAGRAM or texture shot — how it works<span>Not a before/after (we don't do it). A clean illustration of the collagen-stimulation depth, or a serum-texture atmosphere tile.</span></div></div>
+    <div class="t-img img-wrap contain"><img src="images/microneedling-diagram.jpg" alt="Microneedling — how collagen stimulation works"></div>
     <div class="qline"><div class="q">What it actually does.</div><p>Creates thousands of microscopic channels in the skin and adds radiofrequency heat, triggering a real collagen-rebuilding response over weeks. The closest in-clinic facial to actually slowing what's happening underneath, rather than improving the surface.</p></div>
     <div class="qline"><div class="q">Why I'm telling you about it anyway.</div><p>Because for women in their 40s and 50s who feel their skin has lost a firmness they can't name, this is often the right answer — and I'd rather you hear it from me than feel I hid it to keep you on my own menu.</p></div>
     <div class="honest"><div class="h-lab">Why we don't do it</div><p>It's a device-and-operator treatment where experience matters enormously, and we'd rather not offer something we can't be the best in town at. If your assessment points here, I'll tell you plainly and point you to two practitioners locally I'd trust with my own face. <span class="em">That referral costs me a booking. I'd still rather you got the right treatment.</span></p></div>
@@ -321,7 +346,7 @@
 <!-- ===== CASE STUDY ===== -->
 <div class="col">
   <div class="case">
-    <div class="c-img"><div class="ph"><div class="cam">● CASE STUDY</div><div class="ph-label">BEFORE / AFTER<span>One client, real arc, consented</span></div></div></div>
+    <div class="c-img"><div class="img-wrap"><img src="images/case-study.jpeg" alt="Real client transformation — six weeks"></div></div>
     <div class="c-body">
       <div class="eyebrow">One client · six weeks</div>
       <h3>"I'd basically given up on the expensive stuff."</h3>
@@ -331,23 +356,16 @@
   </div>
 </div>
 
-<!-- ===== CTA (deep-navy block) ===== -->
+<!-- ===== FORM EMBED (replaces previous CTA + quiz) ===== -->
 <div class="col">
-  <div class="cta" id="book">
-    <div class="inner">
-      <div class="eyebrow">The actual next step</div>
-      <h2>Come find out what your skin actually needs.</h2>
-      <p>If you're not sure which of these is you — or whether you need any of them right now — that's exactly what a free skin reading is for. Fifteen minutes, real analysis, an honest plan you can take anywhere. We'll tell you what's worth doing and what isn't.</p>
-      <a href="#" class="cta-btn">Book a free skin reading</a>
-      <p class="reassure">Free, no obligation, no pressure to book anything on the day. You leave with a written plan either way.</p>
+  <section class="form-section" id="book">
+    <div class="form-eyebrow">The actual next step</div>
+    <h2 class="form-title">Book your free skin reading.</h2>
+    <div class="form-embed">
+      <div data-tf-live="01KV2MJZSQZGKDY73JXF2YZAD5"></div>
     </div>
-  </div>
-</div>
-
-<!-- ===== MICRO-CONVERSION ===== -->
-<div class="col micro">
-  <p><b>Not ready to come in?</b> Take the 60-second match — which of the three (if any) fits your skin right now.</p>
-  <a href="#">Take the quiz →</a>
+    <p class="form-reassure">Free, no obligation, no pressure to book anything on the day. You leave with a written plan either way.</p>
+  </section>
 </div>
 
 <!-- ===== P.S. ===== -->
@@ -369,5 +387,6 @@
 
 <div class="foot">WIREFRAME · Meridian Skin Studio [placeholder brand] · white base · navy/indigo dark + lilac accent + light-gray boxes · grey hatched = real consented photography</div>
 
+<script src="//embed.typeform.com/next/embed.js"></script>
 </body>
 </html>
