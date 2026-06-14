@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The 3 Facials Worth Booking After 35</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* ---- PALETTE (placeholders — approve / adjust) ---- */
+    --bg:#FFFFFF;            /* base is white */
+    --ink:#23263F;           /* deep navy-ink for body text */
+    --navy:#2A2D5A;          /* primary dark — buttons, badges, wordmark */
+    --navy-deep:#1E2047;     /* CTA block / footer */
+    --accent:#7C5E9A;        /* muted orchid — small accent text */
+    --lilac:#EFE8F5;         /* soft lilac accent panel */
+    --lilac-2:#E3D7EE;       /* deeper lilac tint */
+    --blue-soft:#E7EDF7;     /* optional light-blue tint */
+    --box:#F4F4F8;           /* light cool-gray box */
+    --box-line:#ECECF2;
+    --line:#E8E8EF;          /* hairlines */
+    --ink-soft:#6E7088;      /* muted captions */
+    --stroke-white:rgba(255,255,255,.8);
+    --radius-l:26px;
+    --radius-m:18px;
+    --radius-s:12px;
+    --shadow-box:0 16px 40px -28px rgba(30,32,71,.5);
+    --shadow-soft:0 10px 26px -18px rgba(30,32,71,.4);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--bg);color:var(--ink);
+    font-family:'Mulish',sans-serif;line-height:1.62;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.serif{font-family:'Fraunces',serif;font-weight:380;letter-spacing:-.01em;line-height:1.13;color:var(--ink);}
+  .em{font-family:'Fraunces';font-style:italic;font-weight:400;}
+  .ph-flag{font-size:11px;color:var(--accent);font-weight:700;font-family:'Mulish';}
+
+  /* ===== STICKY WHITE HEADER ===== */
+  .head{
+    position:sticky;top:0;z-index:60;background:rgba(255,255,255,.82);
+    backdrop-filter:blur(16px) saturate(140%);-webkit-backdrop-filter:blur(16px) saturate(140%);
+    border-bottom:1px solid var(--line);
+  }
+  .head .inner{max-width:820px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
+  .head .wordmark{font-family:'Fraunces';font-weight:420;font-size:23px;letter-spacing:.03em;color:var(--navy);}
+  .head .wordmark small{display:block;font-family:'Mulish';font-weight:600;font-size:8px;letter-spacing:.3em;color:var(--ink-soft);margin-top:2px;}
+  .head .h-cta{font-family:'Mulish';font-weight:700;font-size:13px;color:#fff;background:var(--navy);
+    text-decoration:none;padding:11px 20px;border-radius:100px;transition:transform .2s,background .2s;white-space:nowrap;}
+  .head .h-cta:hover{transform:translateY(-1px);background:var(--navy-deep);}
+  @media(max-width:600px){ .head .inner{padding:13px 18px;} .head .wordmark{font-size:20px;} }
+
+  /* ===== EDITORIAL COLUMN ===== */
+  .col{max-width:820px;margin:0 auto;padding:0 40px;}
+  @media(max-width:600px){ .col{padding:0 20px;} }
+  p{font-size:16.5px;margin-bottom:17px;}
+  .col h2{font-size:28px;line-height:1.16;margin-bottom:15px;}
+  .eyebrow{font-family:'Mulish';font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin-bottom:13px;}
+
+  /* image placeholders */
+  .ph{position:relative;background:var(--box);border-radius:var(--radius-m);overflow:hidden;
+      display:flex;align-items:center;justify-content:center;text-align:center;color:var(--ink-soft);
+      background-image:repeating-linear-gradient(135deg,rgba(124,94,154,.07) 0 14px,transparent 14px 28px);}
+  .ph .ph-label{font-family:'Mulish';font-weight:700;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;padding:14px 16px;line-height:1.55;}
+  .ph .ph-label span{display:block;font-weight:500;letter-spacing:.04em;text-transform:none;font-size:11px;opacity:.85;margin-top:5px;}
+  .ph .cam{position:absolute;top:10px;left:12px;font-size:9px;font-weight:700;letter-spacing:.12em;color:var(--accent);opacity:.8;}
+
+  /* ===== BYLINE ===== */
+  .byline{display:flex;align-items:center;gap:12px;justify-content:center;padding:34px 0 24px;}
+  .byline .avatar{width:46px;height:46px;border-radius:50%;flex:none;}
+  .byline .avatar .ph{width:100%;height:100%;border-radius:50%;}
+  .byline .avatar .ph-label{font-size:8px;padding:0;}
+  .byline .who b{font-family:'Mulish';font-weight:700;font-size:14px;display:block;}
+  .byline .who span{font-size:12.5px;color:var(--ink-soft);}
+
+  /* ===== HERO (image on soft lilac panel) ===== */
+  .hero{display:flex;gap:30px;align-items:stretch;padding-bottom:12px;}
+  .hero .hero-img{flex:none;width:280px;background:var(--lilac);border-radius:var(--radius-l);padding:16px;}
+  .hero .hero-img .ph{height:320px;background:transparent;background-image:repeating-linear-gradient(135deg,rgba(124,94,154,.1) 0 14px,transparent 14px 28px);border:1px solid rgba(124,94,154,.18);}
+  .hero .hero-txt{flex:1;padding-top:6px;}
+  .hero .date{font-family:'Mulish';font-weight:600;font-size:12px;letter-spacing:.04em;color:var(--ink-soft);margin-bottom:12px;}
+  .hero h1{font-size:42px;font-weight:400;line-height:1.05;margin-bottom:16px;}
+  .hero .dek{font-family:'Fraunces';font-size:21px;font-weight:340;color:var(--ink-soft);line-height:1.34;}
+  @media(max-width:600px){
+    .hero{flex-direction:column;gap:18px;}
+    .hero .hero-img{width:100%;}
+    .hero .hero-img .ph{height:290px;}
+    .hero h1{font-size:33px;}
+  }
+
+  .lede{padding:28px 0 6px;}
+  .lede p{font-size:17.5px;}
+  .lede .sub{font-family:'Fraunces';font-style:italic;font-size:19px;color:var(--accent);font-weight:360;}
+
+  hr.rule{border:none;border-top:1px solid var(--line);margin:34px 0;}
+
+  /* ===== TREATMENT (light-gray box) ===== */
+  .box{background:var(--box);border:1px solid var(--box-line);border-radius:var(--radius-l);box-shadow:var(--shadow-box);padding:34px 36px;margin:22px 0;}
+  @media(max-width:600px){ .box{padding:24px 20px;border-radius:var(--radius-m);} }
+  .treatment .rank{display:inline-flex;align-items:center;gap:9px;margin-bottom:14px;
+    font-family:'Mulish';font-weight:700;font-size:11px;letter-spacing:.15em;text-transform:uppercase;color:var(--navy);}
+  .treatment .rank .num{width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:12px;}
+  .treatment h2{font-size:31px;margin-bottom:6px;}
+  .treatment .tagline{font-family:'Fraunces';font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:20px;font-weight:340;}
+  .treatment .t-img{height:250px;margin:6px 0 22px;background:#fff;}
+  .treatment .t-img.ph{border:1px solid var(--line);}
+
+  .qline{margin:17px 0;}
+  .qline .q{font-family:'Mulish';font-weight:700;font-size:14.5px;margin-bottom:3px;}
+  .qline p{margin-bottom:0;font-size:15.5px;}
+
+  .price{margin:20px 0 4px;padding-top:16px;border-top:1px solid var(--line);}
+  .price .amt{font-family:'Fraunces';font-size:23px;color:var(--navy);font-weight:420;margin-right:10px;}
+  .price .note{font-size:14.5px;color:var(--ink-soft);}
+
+  .honest{margin:20px 0 2px;padding-left:18px;border-left:2px solid var(--accent);}
+  .honest .h-lab{font-family:'Mulish';font-weight:700;font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:6px;}
+  .honest p{margin-bottom:0;font-size:15px;}
+
+  details{border-top:1px solid var(--line);margin-top:18px;}
+  details summary{list-style:none;cursor:pointer;padding:15px 0 14px;display:flex;align-items:center;justify-content:space-between;
+    font-family:'Mulish';font-weight:700;font-size:14px;color:var(--ink);}
+  details summary::-webkit-details-marker{display:none;}
+  details summary .plus{width:24px;height:24px;border-radius:50%;border:1px solid var(--line);background:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--navy);transition:transform .25s;flex:none;}
+  details[open] summary .plus{transform:rotate(45deg);}
+  details .dbody{padding:0 0 16px;font-size:15px;color:var(--ink-soft);}
+  details .dbody .wr{margin-bottom:11px;}
+  details .dbody .wr b{color:var(--ink);font-family:'Mulish';}
+
+  /* ===== PULLED QUOTE (open) ===== */
+  .pq{text-align:center;padding:30px 30px 10px;}
+  .pq .mark{font-family:'Fraunces';font-size:56px;line-height:0;color:var(--lilac-2);display:block;height:28px;}
+  .pq q{font-family:'Fraunces';font-style:italic;font-size:27px;line-height:1.32;font-weight:360;quotes:none;display:block;margin:8px auto 16px;max-width:90%;color:var(--ink);}
+  .pq .attr{font-family:'Mulish';font-weight:600;font-size:12.5px;color:var(--ink-soft);}
+
+  /* ===== HOW TO CHOOSE (open) ===== */
+  .choose .row{display:flex;gap:13px;padding:15px 0;border-top:1px solid var(--line);align-items:flex-start;}
+  .choose .row:first-of-type{border-top:none;}
+  .choose .row .dot{width:9px;height:9px;border-radius:50%;background:var(--accent);margin-top:8px;flex:none;}
+  .choose .row .rt b{font-family:'Mulish';font-weight:700;display:block;font-size:15px;margin-bottom:2px;}
+  .choose .row .rt span{font-size:15px;color:var(--ink-soft);}
+
+  /* ===== CASE STUDY (open) ===== */
+  .case{display:flex;gap:24px;align-items:flex-start;}
+  .case .c-img{flex:none;width:200px;}
+  .case .c-img .ph{height:230px;}
+  .case .c-body{flex:1;}
+  .case h3{font-size:22px;margin:8px 0 10px;}
+  .case p{font-size:15px;}
+  @media(max-width:600px){ .case{flex-direction:column;} .case .c-img{width:100%;} .case .c-img .ph{height:190px;} }
+
+  /* ===== CTA (solid deep-navy block — the dark moment) ===== */
+  .cta{background:var(--navy-deep);border-radius:var(--radius-l);padding:42px 40px;margin:26px 0;color:#EDEDF6;position:relative;overflow:hidden;}
+  .cta::after{content:"";position:absolute;width:340px;height:340px;border-radius:50%;
+    background:radial-gradient(circle,rgba(124,94,154,.45),transparent 70%);top:-120px;right:-90px;}
+  .cta .inner{position:relative;z-index:2;max-width:560px;}
+  .cta .eyebrow{color:#B9A8D0;}
+  .cta h2{color:#fff;font-size:31px;margin-bottom:11px;}
+  .cta p{font-size:15.5px;color:#D2D2E2;}
+  .cta-btn{display:inline-block;margin-top:8px;font-family:'Mulish';font-weight:700;font-size:15px;
+    padding:16px 30px;border-radius:100px;background:#fff;color:var(--navy-deep);text-decoration:none;transition:transform .2s;}
+  .cta-btn:hover{transform:translateY(-2px);}
+  .cta .reassure{font-size:13px;color:#A9A9C2;margin-top:13px;margin-bottom:0;}
+
+  /* ===== MICRO-CONVERSION (open) ===== */
+  .micro{text-align:center;padding:8px 20px 4px;}
+  .micro p{font-size:15px;margin-bottom:12px;}
+  .micro a{font-family:'Mulish';font-weight:700;font-size:13.5px;color:var(--navy);text-decoration:none;
+    border:1px solid var(--lilac-2);background:var(--lilac);padding:12px 22px;border-radius:100px;display:inline-block;}
+
+  /* ===== P.S. ===== */
+  .ps{font-size:14px;color:var(--ink-soft);text-align:center;line-height:1.62;padding:6px 20px 0;}
+  .ps .em{color:var(--ink);}
+
+  /* ===== KEEP READING (tiles) ===== */
+  .keep{padding:8px 0 0;}
+  .keep h3{text-align:center;font-size:23px;margin-bottom:3px;}
+  .keep .ksub{text-align:center;font-size:13.5px;color:var(--ink-soft);margin-bottom:22px;}
+  .ktiles{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:600px){ .ktiles{grid-template-columns:1fr;} }
+  .ktile{border-radius:var(--radius-m);overflow:hidden;border:1px solid var(--box-line);background:var(--box);text-decoration:none;color:inherit;transition:transform .2s,box-shadow .2s;}
+  .ktile:hover{transform:translateY(-3px);box-shadow:var(--shadow-soft);}
+  .ktile .ph{height:120px;border-radius:0;}
+  .ktile .kt{padding:15px 17px;}
+  .ktile .kt .tag{font-family:'Mulish';font-weight:700;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);}
+  .ktile .kt b{font-family:'Fraunces';font-weight:420;font-size:16.5px;display:block;margin:5px 0;color:var(--ink);}
+  .ktile .kt span{font-size:13px;color:var(--ink-soft);}
+
+  .foot{background:var(--navy-deep);color:#A9A9C2;margin-top:50px;padding:30px 20px;text-align:center;font-size:11px;letter-spacing:.04em;}
+</style>
+</head>
+<body>
+
+<!-- ===== STICKY WHITE HEADER ===== -->
+<header class="head">
+  <div class="inner">
+    <div class="wordmark">Meridian<small>SKIN STUDIO · [CITY]</small></div>
+    <a href="#book" class="h-cta">Book a free skin reading</a>
+  </div>
+</header>
+
+<!-- ===== BYLINE ===== -->
+<div class="col">
+  <div class="byline">
+    <div class="avatar"><div class="ph"><div class="ph-label">PHOTO</div></div></div>
+    <div class="who">
+      <b>By Dana Reyes</b>
+      <span>Licensed medical aesthetician · 12 years <span class="ph-flag">[placeholder]</span></span>
+    </div>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <div class="hero">
+    <div class="hero-img">
+      <div class="ph"><div class="ph-label">HERO IMAGE<span>Real client, mid-30s–40s. Calm, undone, natural light. Skin in focus — not a posed model. No stock.</span></div></div>
+    </div>
+    <div class="hero-txt">
+      <div class="date">Written May 21, 2026</div>
+      <h1>The 3 facials worth booking after 35</h1>
+      <div class="dek">Most facials feel nice. Three of them actually change your skin. Written by an aesthetician whose studio only offers two of them.</div>
+    </div>
+  </div>
+
+  <!-- ===== LEDE ===== -->
+  <div class="lede">
+    <p>I do this for a living, and I'll tell you what I tell my friends: most facials feel lovely and change nothing. After 35, only a few are worth your money — and exactly which depends on what your skin is actually doing.</p>
+    <p class="sub">My studio only offers two of the three below. I'm including the one we don't do, and where I'd send you for it.</p>
+  </div>
+
+  <hr class="rule">
+
+  <!-- ===== WHY 35 ===== -->
+  <div class="eyebrow">First, why 35 is the line</div>
+  <h2>Your skin didn't get worse. It got slower.</h2>
+  <p>Around this age three things shift at once, and they're the reason your old routine quietly stopped working. <span class="em">Cell turnover slows</span> — the dull surface layer hangs around longer, so skin looks tired even when you're not. <span class="em">Collagen production drops</span> by roughly 1% a year from your mid-twenties on, and by the late 30s that adds up to visible slack and lines that used to bounce back. And <span class="em">your skin holds less water</span> — the "tight by mid-afternoon" feeling no amount of moisturizer at home seems to fix.</p>
+  <p>That's the whole problem in one sentence: the work your skin used to do on its own, it now needs a little help with. The three facials below each take on one of those shifts — directly, not cosmetically. Everything else is a nice hour you'll forget by Friday.</p>
+</div>
+
+<!-- ===== TREATMENT 1 ===== -->
+<div class="col">
+  <div class="box treatment">
+    <div class="rank"><span class="num">1</span> The maintenance one — for almost everyone</div>
+    <h2>HydraFacial</h2>
+    <div class="tagline">If you only ever book one in-clinic facial, this is it.</div>
+    <div class="t-img ph"><div class="cam">● SUMMONED ASSET</div><div class="ph-label">BEFORE / AFTER — same client, same light<span>Pulled in because the copy below describes this exact result. Real, consented, mid-to-good — not miraculous.</span></div></div>
+    <div class="qline"><div class="q">What it actually does.</div><p>Deep-cleans pores at a level no home routine reaches, then floods the skin with hydration and active serums while it's open and receptive. A reset, not a renovation.</p></div>
+    <div class="qline"><div class="q">What you'll notice.</div><p>Skin that holds light differently — the dull layer is gone. Makeup sits flat instead of catching on dry patches. Most clients see it the same day, in the car mirror before they've left.</p></div>
+    <div class="price"><span class="amt">$175–$250</span><span class="note">per session <span class="ph-flag">[verify local pricing]</span> — every 4 to 6 weeks if you keep it up. Book one and never return, and you get one good week. That's the honest math.</span></div>
+    <details>
+      <summary>Who it's for — and who it isn't <span class="plus">+</span></summary>
+      <div class="dbody">
+        <div class="wr"><b>For:</b> almost everyone over 35, especially if your skin reads "tired" no matter how you sleep. The lowest-commitment way to see what professional skin looks like.</div>
+        <div class="wr"><b>Not for:</b> anyone hoping one session fixes everything. It's maintenance, and maintenance only works on a rhythm.</div>
+      </div>
+    </details>
+    <div class="honest"><div class="h-lab">The honest downside</div><p>It doesn't shift pigmentation and it doesn't touch fine lines. It does one thing — deep clean and hydrate — better than anything you can do at home. We book this most for women who already spent on serums and weren't getting what the bottle promised.</p></div>
+  </div>
+</div>
+
+<!-- ===== PULLED QUOTE ===== -->
+<div class="col">
+  <div class="pq">
+    <span class="mark">"</span>
+    <q>I didn't want to look "done." I just wanted to stop looking exhausted in every photo of myself.</q>
+    <div class="attr">— what a client said in her first consult <span class="ph-flag">[real VoC — replace with consented quote]</span></div>
+  </div>
+</div>
+
+<!-- ===== TREATMENT 2 ===== -->
+<div class="col">
+  <div class="box treatment">
+    <div class="rank"><span class="num">2</span> The corrective one — for tone and texture</div>
+    <h2>Chemical peel</h2>
+    <div class="tagline">The one that earns a downtime week — and is worth it when it's the right call.</div>
+    <div class="t-img ph"><div class="cam">● SUMMONED ASSET</div><div class="ph-label">BEFORE / AFTER — pigmentation &amp; tone<span>Summoned by "what you'll notice." Show a realistic 4-week result, ideally with a day-3 "slightly red" shot too — honesty about downtime.</span></div></div>
+    <div class="qline"><div class="q">What it actually does.</div><p>Removes the top layers of dull, uneven, sun-marked skin so newer skin underneath can surface. Different acids do different jobs — glycolic for texture, mandelic for sensitive skin, TCA for pigmentation. Matched to your face, not pulled off a menu.</p></div>
+    <div class="qline"><div class="q">What you'll notice.</div><p>A few days of slight redness, then flaking around day four to six. By day seven to ten: more even tone, smoother texture, and that "what's different about you" reaction nobody can quite place.</p></div>
+    <div class="price"><span class="amt">$200–$450</span><span class="note">depending on depth <span class="ph-flag">[verify]</span>. Most see real change after a single well-chosen peel — not the package of six some clinics quote.</span></div>
+    <details>
+      <summary>Who it's for — and who it isn't <span class="plus">+</span></summary>
+      <div class="dbody">
+        <div class="wr"><b>For:</b> women who've watched their tone shift — sun spots, old breakout marks that won't fade, fine lines that deepen in certain light.</div>
+        <div class="wr"><b>Not for:</b> the week before a wedding. Peels need timing and breathing room — and a clinic that picks the right strength. Too light does nothing; too strong on skin that wasn't ready can set you back.</div>
+      </div>
+    </details>
+    <div class="honest"><div class="h-lab">The honest downside</div><p>There's a real downtime window. We've had women panic at day-three redness — which is exactly why we walk you through every day before you book. This is the one treatment where the wrong choice can cost you, so it's the one we're most careful about saying "not yet" to.</p></div>
+  </div>
+</div>
+
+<!-- ===== TREATMENT 3 ===== -->
+<div class="col">
+  <div class="box treatment">
+    <div class="rank"><span class="num">3</span> The deep one — and the one we don't offer</div>
+    <h2>RF microneedling</h2>
+    <div class="tagline">The most powerful of the three. We send people elsewhere for it, on purpose.</div>
+    <div class="t-img ph"><div class="cam">● ATMOSPHERE / ILLUSTRATION</div><div class="ph-label">DIAGRAM or texture shot — how it works<span>Not a before/after (we don't do it). A clean illustration of the collagen-stimulation depth, or a serum-texture atmosphere tile.</span></div></div>
+    <div class="qline"><div class="q">What it actually does.</div><p>Creates thousands of microscopic channels in the skin and adds radiofrequency heat, triggering a real collagen-rebuilding response over weeks. The closest in-clinic facial to actually slowing what's happening underneath, rather than improving the surface.</p></div>
+    <div class="qline"><div class="q">Why I'm telling you about it anyway.</div><p>Because for women in their 40s and 50s who feel their skin has lost a firmness they can't name, this is often the right answer — and I'd rather you hear it from me than feel I hid it to keep you on my own menu.</p></div>
+    <div class="honest"><div class="h-lab">Why we don't do it</div><p>It's a device-and-operator treatment where experience matters enormously, and we'd rather not offer something we can't be the best in town at. If your assessment points here, I'll tell you plainly and point you to two practitioners locally I'd trust with my own face. <span class="em">That referral costs me a booking. I'd still rather you got the right treatment.</span></p></div>
+  </div>
+</div>
+
+<!-- ===== HOW TO CHOOSE ===== -->
+<div class="col choose">
+  <hr class="rule">
+  <div class="eyebrow">So which one is actually you?</div>
+  <h2 style="margin-bottom:18px;">How to choose — in three lines</h2>
+  <div class="row"><span class="dot"></span><div class="rt"><b>Dull and tired, no matter how you sleep.</b><span>Start with the HydraFacial — the fastest "oh, there I am" for the least commitment.</span></div></div>
+  <div class="row"><span class="dot"></span><div class="rt"><b>Tone has shifted — spots, unevenness, marks that won't fade.</b><span>The peel is your one. Timed right, strength matched to your skin.</span></div></div>
+  <div class="row"><span class="dot"></span><div class="rt"><b>It's deeper — a firmness or "lift from underneath" you've lost.</b><span>That's RF microneedling, and we'll send you to someone excellent for it.</span></div></div>
+  <p style="margin-top:18px;">Most women in their late 30s and 40s end up doing two of the three on a rotation: a HydraFacial every month or so, a peel a few times a year. That's not a sales pitch — it's just what tends to work.</p>
+  <hr class="rule">
+</div>
+
+<!-- ===== CASE STUDY ===== -->
+<div class="col">
+  <div class="case">
+    <div class="c-img"><div class="ph"><div class="cam">● CASE STUDY</div><div class="ph-label">BEFORE / AFTER<span>One client, real arc, consented</span></div></div></div>
+    <div class="c-body">
+      <div class="eyebrow">One client · six weeks</div>
+      <h3>"I'd basically given up on the expensive stuff."</h3>
+      <p>K., 44, came in spending around $190 a month on serums <span class="ph-flag">[placeholder]</span> and not feeling like any of them did anything. Her skin wasn't damaged — it was dull and dehydrated, the classic after-35 combination.</p>
+      <p>We started with one HydraFacial, added a light peel three weeks later for some old sun marks, and that was it. No package, no upsell. Six weeks on, she does one HydraFacial a month and has stopped buying serums she didn't need.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== CTA (deep-navy block) ===== -->
+<div class="col">
+  <div class="cta" id="book">
+    <div class="inner">
+      <div class="eyebrow">The actual next step</div>
+      <h2>Come find out what your skin actually needs.</h2>
+      <p>If you're not sure which of these is you — or whether you need any of them right now — that's exactly what a free skin reading is for. Fifteen minutes, real analysis, an honest plan you can take anywhere. We'll tell you what's worth doing and what isn't.</p>
+      <a href="#" class="cta-btn">Book a free skin reading</a>
+      <p class="reassure">Free, no obligation, no pressure to book anything on the day. You leave with a written plan either way.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ===== MICRO-CONVERSION ===== -->
+<div class="col micro">
+  <p><b>Not ready to come in?</b> Take the 60-second match — which of the three (if any) fits your skin right now.</p>
+  <a href="#">Take the quiz →</a>
+</div>
+
+<!-- ===== P.S. ===== -->
+<div class="col">
+  <hr class="rule">
+  <p class="ps">P.S. — If you've already been quoted for one of these somewhere else, bring the quote. I'll tell you honestly whether it's fair, <span class="em">even if it means sending you back to them.</span> Most second opinions here end exactly that way, and I'm fine with it.</p>
+  <hr class="rule">
+</div>
+
+<!-- ===== KEEP READING ===== -->
+<div class="col keep">
+  <h3>Read this far?</h3>
+  <div class="ksub">A few more honest ones, if you're in the mood.</div>
+  <div class="ktiles">
+    <a href="#" class="ktile"><div class="ph"><div class="ph-label">IMAGE</div></div><div class="kt"><div class="tag">Price transparency</div><b>What $350 of Botox actually buys you</b><span>Units, brand, technique — and the quote ranges that should worry you.</span></div></a>
+    <a href="#" class="ktile"><div class="ph"><div class="ph-label">IMAGE</div></div><div class="kt"><div class="tag">Aesthetician POV</div><b>3 treatments women regret most</b><span>And what I'd have told them to do instead.</span></div></a>
+  </div>
+</div>
+
+<div class="foot">WIREFRAME · Meridian Skin Studio [placeholder brand] · white base · navy/indigo dark + lilac accent + light-gray boxes · grey hatched = real consented photography</div>
+
+</body>
+</html>
